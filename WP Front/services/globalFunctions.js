@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 
 	export const globalAPI = () => {
 	return axios.create({
-		  // baseURL: 'https://apps.fastlogistics.com.ph/warehouseproposalapi/api/'
+		   //baseURL: 'https://apps.fastlogistics.com.ph/warehouseproposalapi/api/'
      baseURL: 'https://localhost:7152/api/'
     
 });

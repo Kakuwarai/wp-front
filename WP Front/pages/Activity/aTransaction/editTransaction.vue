@@ -1002,6 +1002,7 @@
           selectedNotedBy.value[1] = response.data.notedUser
 
           response.data.rate.forEach(element => {
+         
             chargeList.value.push({
               'chargeCode': element.chargeCode,
               'chargeName': element.chargeName,
@@ -1012,7 +1013,7 @@
               'remarks': element.defaultRemarks
             })
           });
-  
+  console.log(chargeList.value);
           response.data.termsAndCondition.forEach(element => {
             termsList.value.push({
               'check': false,
@@ -1034,7 +1035,7 @@
 
 
             responseReferenceEdit.data.transactionDetail.forEach(element => {
-
+              console.log(element);
             const temp = chargeList.value.filter(x => x['chargeCode'] == element.chargeCode)[0]
 
             selectedToChangeChargeAmount.value.push(element.rates.toString())
